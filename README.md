@@ -58,45 +58,36 @@ and retry the original request.
 
 ### Endpoints
 
-* [apps](src/endpoint/apps.ts#L203) -- CRUD (Create, Read, Update, Delete) operations for SmartApps and API Access apps
+* [apps](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Apps) -- A SmartApp can be an AWS Lambda function or a WebHook endpoint.
 
-* [capabilities](src/endpoint/apps.ts#L111) -- Operations to read standard capability definitions as well as create and
-modify custom capabilities
+* [capabilities](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Capabilities) -- Operations to read standard capability definitions as well as create and modify custom capabilities
 
-* [deviceProfiles](src/endpoint/deviceprofiles.ts#L49) -- CRUD operations for device profiles. Changes made with this
-API are currently not reflected in the Developer Workspace, so for the most part creating and modifying capabilities
-should still be done there.
+* [deviceProfiles](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Device-Profiles) -- A device profile contains the components, capabilities, and metadata (ID, name, ownership, etc.) that define a SmartThings device. Capabilities define the features of the device, and capabilities are grouped into components.  Changes made with this API are currently not reflected in the Developer Workspace, so for the most part creating and modifying capabilities should still be done there.
 
-* [devices](src/endpoint/devices.ts#L205) -- Operations to access, control, create, update, and delete devices. These
+* [devices](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Devices) -- Operations to access, control, create, update, and delete devices. These
 operations include the ability to query for device statue and send commands to devices.
 
-* [installedApps](src/endpoint/installedapps.ts#L324) -- CRUD operations for installed app instances. In most cases apps
-are installed by users and these operations are not explicitly called, but they may be useful for creating developer
-tools and automating tests.
+* [installedApps](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Installed-Apps) -- Apps are installed by users and these operations are not explicitly called, but they may be useful for creating developer tools and automating tests.
 
-* [locations](src/endpoint/locations.ts#L33) -- CRUD operations for locations
+* [locations](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Locations) -- Locations can include hubs, devices, and Automations. Automations allow control of the devices in a Location, the ability to monitor and receive notifications about what's happening at the Location, and more.
 
-* [modes](src/endpoint/locations.ts#L26) -- CRUD operations for modes along with the ability to change the current mode
-of a location.
+* [modes](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Modes) -- Operations to change the current **mode** of a location.
 
-* [notifications](src/endpoint/notifications.ts#L83) -- Operations to send push notifications to SmartThings mobile app
+* [notifications](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Notifications3) -- Operations to send push notifications to SmartThings mobile app
 clients.
 
-* [rooms](src/endpoint/rooms.ts#L26) -- CRUD operations for rooms along with the ability to query for the devices in
-a room.
+* [rooms](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Rooms) -- Operations related to **Rooms**.  Rooms are a grouping of devices within a location.  
 
-* [rules](src/endpoint/rules.ts#L275) -- CRUD operations for rules along with the ability to execute a rule.
+* [rules](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Rules) -- Operations for working with Rules.  Rules allow you to create automations that can operate on SmartThings connected devices.
 
-* [scenes](src/endpoint/scenes.ts#L56) -- Operations to list and execute scenes. Currently does not support the creation
-and updating of scenes.
+* [scenes](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Scenes) -- Operations to list and execute scenes.  Currently this endpoint does not support creating or updating scenes.
 
-* [schedules](src/endpoint/schedules.ts#L79) -- CRUD operations for schedules for use in SmartApps.
+* [schedules](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Schedules) -- Operations for schedules for use in SmartApps.
 
-* [schema](src/endpoint/schema.ts#L220) - CRUD operations for ST Schema connectors and installed instances, along with
-operations to list the devices owned by each installed instance.
+* [schema](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Schema) - Operations for ST Schema connectors and installed instances, along with operations to list the devices owned by each installed instance.
 
-* [services](src/endpoint/services.ts#L499) - Operations to query for and subscribe to location service data, currently
-consisting of current weather conditions, weather forecast, and air quality data.
+* [services](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Services) - Operations to query for and subscribe to location service data, currently consisting of current weather conditions, weather forecast, and air quality data.
 
-* [subscriptions](src/endpoint/subscriptions.ts#L213) -- Operations for subscribing to events, for use in SmartApps and
+* [subscriptions](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Subscriptions) -- Operations for subscribing to events, for use in SmartApps and
 API Access apps.
+
