@@ -58,7 +58,7 @@ and retry the original request.
 
 ### Endpoints
 
-* apps -- A SmartApp can be an AWS lambda function or WebHook endpoint. Like to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/apps.ts#L213), link to wiki page description here[(https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Apps)]
+* apps -- A SmartApp can be an AWS lambda function or WebHook endpoint. Like to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/apps.ts#L213), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Apps)
 
 * capabilities - Operations to read standard capability definitions as well as create and modify custom capabilities.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/capabilities.ts#L6), link to wiki page [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Capabilities).
 
