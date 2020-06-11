@@ -58,36 +58,34 @@ and retry the original request.
 
 ### Endpoints
 
-* [apps](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Apps) -- A SmartApp can be an AWS Lambda function or a WebHook endpoint.
+* apps -- A SmartApp can be an AWS lambda function or WebHook endpoint. Like to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/apps.ts#L213), link to wiki page description here[(https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Apps)]
 
-* [capabilities](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Capabilities) -- Operations to read standard capability definitions as well as create and modify custom capabilities
+* capabilities - Operations to read standard capability definitions as well as create and modify custom capabilities.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/capabilities.ts#L6), link to wiki page [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Capabilities).
 
-* [deviceProfiles](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Device-Profiles) -- A device profile contains the components, capabilities, and metadata (ID, name, ownership, etc.) that define a SmartThings device. Capabilities define the features of the device, and capabilities are grouped into components.  Changes made with this API are currently not reflected in the Developer Workspace, so for the most part creating and modifying capabilities should still be done there.
+* deviceProfiles - A device profile contains the components, capabilities, and metadata (ID, name, ownership, etc.) that define a SmartThings device. Link to code interface [here], link to wiki page [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Device-Profiles) 
 
-* [devices](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Devices) -- Operations to access, control, create, update, and delete devices. These
-operations include the ability to query for device statue and send commands to devices.
+* devices - Operations to access, control, create, update, and delete devices.  Like to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/devices.ts#L69), link to wiki page [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Devices)
 
-* [installedApps](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Installed-Apps) -- Apps are installed by users and these operations are not explicitly called, but they may be useful for creating developer tools and automating tests.
+* installedApps - Apps are installed by users.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/installedapps.ts#L60), link to wiki page descripotion [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Installed-Apps)
 
-* [locations](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Locations) -- Locations can include hubs, devices, and Automations. Automations allow control of the devices in a Location, the ability to monitor and receive notifications about what's happening at the Location, and more.
+* locations - Locations can include hubs, devices, and Automations.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/installedapps.ts#L135), like to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Locations)
 
-* [modes](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Modes) -- Operations to change the current **mode** of a location.
+* modes - Operations to change the current **mode** of a location.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/modes.ts#L27), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Modes)
 
-* [notifications](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Notifications3) -- Operations to send push notifications to SmartThings mobile app
-clients.
+* notifications - Operations to send push notifications to SmartThings mobile app.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/notifications.ts#L37), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Notifications3)
 
-* [rooms](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Rooms) -- Operations related to **Rooms**.  Rooms are a grouping of devices within a location.  
+* rooms - Operations related to **Rooms**, a grouping of devices within a location.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/rooms.ts#L27), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Rooms)
 
-* [rules](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Rules) -- Operations for working with Rules.  Rules allow you to create automations that can operate on SmartThings connected devices.
+* rules - Operations for working with Rules.  Rules allow you to create automations that can operate on SmartThings connected devices.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/rules.ts#L11), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Rules)     
 
-* [scenes](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Scenes) -- Operations to list and execute scenes.  Currently this endpoint does not support creating or updating scenes.
+* scenes - Operations to list and execute scenes.  Currently this endpoint does not support creating or updating scenes.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/scenes.ts#L56), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Scenes) -- 
 
-* [schedules](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Schedules) -- Operations for schedules for use in SmartApps.
+* schedules - Operations for schedules for use in SmartApps.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/schedules.ts#L79), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Schedules) -- 
 
-* [schema](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Schema) - Operations for ST Schema connectors and installed instances, along with operations to list the devices owned by each installed instance.
+* schema - Operations for ST Schema connectors and installed instances, along with operations to list the devices owned by each installed instance. Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/schema.ts#L220), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Schema) - 
 
-* [services](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Services) - Operations to query for and subscribe to location service data, currently consisting of current weather conditions, weather forecast, and air quality data.
+* services - Operations to query for and subscribe to location service data, currently consisting of current weather conditions, weather forecast, and air quality data.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/services.ts#L23), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Services) - 
 
-* [subscriptions](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Subscriptions) -- Operations for subscribing to events, for use in SmartApps and
-API Access apps.
+* subscriptions -  Operations for subscribing to events, for use in SmartApps and
+API Access apps.  Link to code interface [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/blob/master/src/endpoint/subscriptions.ts#L8), link to wiki page description [here](https://github.com/SmartThingsCommunity/smartthings-core-sdk/wiki/Subscriptions) --
 
